@@ -9,9 +9,9 @@ namefile = input('Arquivo> ')
 
 client.send(namefile.encode())
 
-with open(f'../midias/{namefile}', 'wb') as file:
+with open('../client_side/' + namefile, 'wb') as file:
     while 1:
-        data = client.recv(1000000)
+        data = client.recv(5120)
         if not data:
             break
         file.write(data)

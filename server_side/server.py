@@ -1,20 +1,44 @@
 import socket
+from _thread import *
 import os
+import sys
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(('localhost', 20000))
+server.bind(('127.0.0.1', 7777))
 server.listen(4)
-print ('Aguardando conexão...\n')
+print ('Aguardando conexões...\n')
 
-connection, adress = server.accept()
+coonnectionList = []
 
-namefile = connection.recv(1024).decode()
+def SetNewThreads(connectionUser, address):
+    while True:
+        try:
+            connectionUser.send("Bem Vindo".encode())
+            namefile = connectionUser.recv(1024).decode()
+            if(os.path.exists('../files/' + namefile)):
+                with open('../files/' + namefile, 'rb') as file:
+                    for data in file.readlines():
+                        connectionUser.send(data)
+                print (f'{namefile} enviado!')
+            else:
+                print("This archive don't exists in server's midia fold")
+                server.close()
+        except:
+            if Exception:
+                expt = sys.exc_info()
+    
+def AcceptConnectionThread():
+    while True:
+        connection, address = server.accept()
+        print('User connected (address):', address)
 
-if(os.path.exists('../files/' + namefile)):
-    with open('../files/' + namefile, 'rb') as file:
-        for data in file.readlines():
-            connection.send(data)
-    print (f'{namefile} enviado!')
-else:
-    print("This archive don't exists in server's midia fold")
-    server.close()
+        coonnectionList.append(connection)
+        print("Clientes conectados:", len(coonnectionList))
+        start_new_thread(SetNewThreads, (connection, address))
+
+
+
+start_new_thread(AcceptConnectionThread, ())
+
+exitCommand = input("Press 'ENTER' to exit\n")
+

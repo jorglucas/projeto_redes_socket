@@ -2,7 +2,7 @@ import socket
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-client.connect(('localhost', 20000));
+client.connect(('localhost', 7777));
 print ('Cliente conectado!\n')
 
 namefile = input('Arquivo> ')

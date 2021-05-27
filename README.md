@@ -1,6 +1,17 @@
-## projeto_redes_socket
+## Projeto Redes Socket
 
 Este projeto em Python utiliza web socket para criar uma relação direta entre clientes e servidor. o principal objetivo é possibilitar o compartilhamento de arquivos entre clientes, onde os clientes podem baixar ou enviar arquivos entre si.
+
+
+## Funcionalidades do Sistema
+
+|   Group Only   |                Feature           |
+| :-----------:  | :--------------------------------:|
+|       ✅       | Listar arquivos existentes no servidor        |
+|       ✅       | Enviar arquivos para o servidor              |
+|       ✅       | Apagar arquivos para o servidor                   |
+|       ✅       | Sair do servidor               |
+|       ❌       |   Baixar arquivos do servidor                  |
 
 
 ## Requisitos do Sistema

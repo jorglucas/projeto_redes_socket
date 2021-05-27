@@ -1,7 +1,6 @@
 import os
 import socket
 import threading
-import time
 
 IP = 'localhost'
 PORT = 20000
@@ -17,7 +16,7 @@ def handle_client(conn, addr):
     while True:
         data = conn.recv(SIZE).decode(FORMAT)
         data = data.split("@")
-        cmd = data[0].lower()
+        cmd = data[0]
         print (cmd)
 
         if cmd == 'listar':
@@ -66,9 +65,6 @@ def handle_client(conn, addr):
 
     print(f"[DESCONECTADO] {addr} se desconectou do servidor.")
     conn.close()
-    if (count <= 0):
-            print ("Todas conexoes foram perdidas. O servidor será fechado!")
-            server.close()
 
 def main():
     print("[INICIANDO] O Servidor está disponível para acesso!")
@@ -82,8 +78,7 @@ def main():
         thread = threading.Thread(target=handle_client, args=(conn, addr))
         thread.start()
         count = threading.activeCount() - 1
-        print(f"[CONEXOES ATIVA] {count}")
-        
+        print(f"[CONEXOES ATIVA] {count}")  
 
 if __name__ == "__main__":
     main()

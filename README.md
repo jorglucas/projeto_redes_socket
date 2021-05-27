@@ -9,7 +9,7 @@ Este projeto em Python utiliza web socket para criar uma relação direta entre 
 | :-----------:  | :-------------------------------------------: |
 |       ✅       | Listar arquivos existentes no servidor        |
 |       ✅       | Enviar arquivos para o servidor               |
-|       ✅       | Apagar arquivos para o servidor               |
+|       ✅       | Apagar arquivos para o servidor (com senha padrão: 1234)               |
 |       ✅       | Sair do servidor                              |
 |       ✅       | Tratamento de alguns erros comuns             |
 |       ❌       | Tratamento de alguns erros no lado do servidor|

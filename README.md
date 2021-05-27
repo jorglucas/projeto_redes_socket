@@ -43,3 +43,7 @@ Obs. 1: Para o comando enviar deve digitar o caminho onde se encontra o arquivo 
 Obs. 2: Para o comando deletar, você deve digitar o nome do arquivo que deseja excluir no servidor e a senha de administrador (1234), logo o comando deverá ser `deletar teste.txt 1234`.
 
 
+## Dupla do projeto:
+
+Jhonata Tenório e Jorge Lucas
+

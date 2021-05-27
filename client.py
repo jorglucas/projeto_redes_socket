@@ -32,16 +32,16 @@ def main():
         elif cmd == "listar":
             client.send(cmd.encode(FORMAT))
         elif cmd == "deletar":
-            client.send(f"{cmd}@{data[1]}".encode(FORMAT))
+            client.send(f"{cmd}@{data[1]}@{data[2]}".encode(FORMAT))
         elif cmd == "enviar":
             path = data[1]
-
             with open(f"{path}", "r") as f:
                 text = f.read()
-
             filename = path.split("/")[-1]
             send_data = f"{cmd}@{filename}@{text}"
             client.send(send_data.encode(FORMAT))
+        else:
+            client.send(cmd.encode(FORMAT))
 
     print("Desconectado do servidor.")
     client.close()

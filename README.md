@@ -26,11 +26,6 @@ O processo de instalação do Python3 é bem simples, basta ir ao link fornecido
 
 ## Executando a servidor
 
-Após o python3 ser baixado e instalado, faça o download desse repositório e entre na pasta de destino: `[...]/projeto_redes_socket` e execute o arquivo `[...]/projeto_redes_socket/servidor.py` clicando duas vezes ou diretamente pelo CMD, usando o seguinte comando na raiz do projeto: `python3 servidor.py`. Veja na figura abaixo como fazer isto.
+Após o python3 ser baixado e instalado, faça o download desse repositório e entre na pasta de destino: `[...]/projeto_redes_socket` e execute o arquivo `[...]/projeto_redes_socket/servidor.py` clicando duas vezes ou diretamente pelo CMD, usando o seguinte comando na raiz do projeto: `python3 servidor.py`. 
 
-![image](https://user-images.githubusercontent.com/51134324/119853171-54d60600-bee6-11eb-979d-0954c13290a9.png)
-
-Uma mensagem de confirmação aparecerá, como na imagem a seguir: Veja na figura abaixo como fazer isto.
-
-![alt text]( "Mensagem de confirmação SERVER ON - Server Online")
 

@@ -26,6 +26,9 @@ Este projeto em Python utiliza web socket para criar uma relação direta entre 
 
 Algumas funções poderiam ser implementadas para deixar a aplicação ainda mais completa, como por exemplo: o tratamento de alguns erros no lado do servidor, monitoramento de dados enviados e recebidos pelo servidor,possibilitar o download de arquivos pelo cliente, mostrar o tamanho do arquivo para para o cliente na parte de listagem. 
 
+## Dificuldades encontradas no desenvolvimento do projeto
+
+Algumas dificuldades foram encontradas durante o desenvolvimento da aplicação, como por exemplo: o uso de timeOut para o desligamento do servidor, download de arquivos por parte do cliente, etc.
 
 ## Requisitos do Sistema
 

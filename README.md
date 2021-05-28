@@ -5,15 +5,26 @@ Este projeto em Python utiliza web socket para criar uma relação direta entre 
 
 ## Funcionalidades do Sistema
 
-|   Status       |                 Funcionalidade                |
+|   Status       |                 Pincipais Funcionalidades     |
 | :-----------:  | :-------------------------------------------: |
 |       ✅       | Listar arquivos existentes no servidor        |
 |       ✅       | Enviar arquivos para o servidor               |
-|       ✅       | Apagar arquivos para o servidor (com senha padrão: 1234)               |
+|       ✅       | Apagar arquivos para o servidor (com senha padrão: 1234)|
 |       ✅       | Sair do servidor                              |
 |       ✅       | Tratamento de alguns erros comuns             |
+
+<br/>
+
+|   Status       |                 Poderia ter sido implementado |
+| :-----------:  | :-------------------------------------------: |
 |       ❌       | Tratamento de alguns erros no lado do servidor|
+|       ❌       | Monitoramento de dados recebidos e enviados pelo servidor|
 |       ❌       |   Baixar arquivos do servidor                 |
+
+
+## Funções que poderiam ser implementadas 
+
+Algumas funções poderiam ser implementadas para deixar a aplicação ainda mais completa, como por exemplo: o tratamento de alguns erros no lado do servidor, monitoramento de dados enviados e recebidos pelo servidor,possibilitar o download de arquivos pelo cliente, mostrar o tamanho do arquivo para para o cliente na parte de listagem. 
 
 
 ## Requisitos do Sistema
